@@ -1,0 +1,135 @@
+{
+  "format": 1,
+  "restore": {
+    "d:\\revature\\MessageBoardio\\MessageBoardio.Test\\MessageBoardio.Test.csproj": {}
+  },
+  "projects": {
+    "d:\\revature\\MessageBoardio\\MessageBoardio.MVC\\MessageBoardio.MVC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\revature\\MessageBoardio\\MessageBoardio.MVC\\MessageBoardio.MVC.csproj",
+        "projectName": "MessageBoardio.MVC",
+        "projectPath": "d:\\revature\\MessageBoardio\\MessageBoardio.MVC\\MessageBoardio.MVC.csproj",
+        "packagesPath": "C:\\Users\\jiyko\\.nuget\\packages\\",
+        "outputPath": "d:\\revature\\MessageBoardio\\MessageBoardio.MVC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jiyko\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "d:\\revature\\MessageBoardio\\MessageBoardio.Test\\MessageBoardio.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\revature\\MessageBoardio\\MessageBoardio.Test\\MessageBoardio.Test.csproj",
+        "projectName": "MessageBoardio.Test",
+        "projectPath": "d:\\revature\\MessageBoardio\\MessageBoardio.Test\\MessageBoardio.Test.csproj",
+        "packagesPath": "C:\\Users\\jiyko\\.nuget\\packages\\",
+        "outputPath": "d:\\revature\\MessageBoardio\\MessageBoardio.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jiyko\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "d:\\revature\\MessageBoardio\\MessageBoardio.MVC\\MessageBoardio.MVC.csproj": {
+                "projectPath": "d:\\revature\\MessageBoardio\\MessageBoardio.MVC\\MessageBoardio.MVC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.9.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

@@ -5874,11 +5874,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\revature\\MessageBoardio\\MessageBoardio.Test\\MessageBoardio.Test.csproj",
+      "projectUniqueName": "D:\\revature\\MessageBoardio\\MessageBoardio.Test\\MessageBoardio.Test.csproj",
       "projectName": "MessageBoardio.Test",
-      "projectPath": "d:\\revature\\MessageBoardio\\MessageBoardio.Test\\MessageBoardio.Test.csproj",
+      "projectPath": "D:\\revature\\MessageBoardio\\MessageBoardio.Test\\MessageBoardio.Test.csproj",
       "packagesPath": "C:\\Users\\jiyko\\.nuget\\packages\\",
-      "outputPath": "d:\\revature\\MessageBoardio\\MessageBoardio.Test\\obj\\",
+      "outputPath": "D:\\revature\\MessageBoardio\\MessageBoardio.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5895,8 +5895,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "d:\\revature\\MessageBoardio\\MessageBoardio.MVC\\MessageBoardio.MVC.csproj": {
-              "projectPath": "d:\\revature\\MessageBoardio\\MessageBoardio.MVC\\MessageBoardio.MVC.csproj"
+            "D:\\revature\\MessageBoardio\\MessageBoardio.MVC\\MessageBoardio.MVC.csproj": {
+              "projectPath": "D:\\revature\\MessageBoardio\\MessageBoardio.MVC\\MessageBoardio.MVC.csproj"
             }
           }
         }

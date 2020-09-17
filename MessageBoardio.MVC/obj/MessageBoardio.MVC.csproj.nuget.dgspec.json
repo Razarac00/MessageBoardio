@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\revature\\MessageBoardio\\MessageBoardio.MVC\\MessageBoardio.MVC.csproj": {}
+    "D:\\revature\\MessageBoardio\\MessageBoardio.MVC\\MessageBoardio.MVC.csproj": {}
   },
   "projects": {
-    "d:\\revature\\MessageBoardio\\MessageBoardio.MVC\\MessageBoardio.MVC.csproj": {
+    "D:\\revature\\MessageBoardio\\MessageBoardio.MVC\\MessageBoardio.MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\revature\\MessageBoardio\\MessageBoardio.MVC\\MessageBoardio.MVC.csproj",
+        "projectUniqueName": "D:\\revature\\MessageBoardio\\MessageBoardio.MVC\\MessageBoardio.MVC.csproj",
         "projectName": "MessageBoardio.MVC",
-        "projectPath": "d:\\revature\\MessageBoardio\\MessageBoardio.MVC\\MessageBoardio.MVC.csproj",
+        "projectPath": "D:\\revature\\MessageBoardio\\MessageBoardio.MVC\\MessageBoardio.MVC.csproj",
         "packagesPath": "C:\\Users\\jiyko\\.nuget\\packages\\",
-        "outputPath": "d:\\revature\\MessageBoardio\\MessageBoardio.MVC\\obj\\",
+        "outputPath": "D:\\revature\\MessageBoardio\\MessageBoardio.MVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

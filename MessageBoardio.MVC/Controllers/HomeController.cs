@@ -5,12 +5,19 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MessageBoardio.MVC.Models;
+using Microsoft.Extensions.Logging;
 
 namespace MessageBoardio.MVC.Controllers
 {
     public class HomeController : Controller
     {
-        [Route("Home/Index")]
+        private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
+
         public IActionResult Index()
         {
             return View();

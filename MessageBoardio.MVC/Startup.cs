@@ -35,8 +35,8 @@ namespace MessageBoardio.MVC
 
             // services.AddRazorPages();
             services.AddControllersWithViews();
-            
-            services.AddSingleton<MessageBoardModel>();
+
+            // services.AddSingleton<MessageBoardModel>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

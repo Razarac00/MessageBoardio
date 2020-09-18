@@ -13,6 +13,7 @@ namespace MessageBoardio.MVC.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private List<string> messageList = MessageBoardModel.Instance.ListAll();
+        private MessageBoardModel m = MessageBoardModel.Instance;
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -21,7 +22,7 @@ namespace MessageBoardio.MVC.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(m);
         }
 
         public IActionResult Privacy()

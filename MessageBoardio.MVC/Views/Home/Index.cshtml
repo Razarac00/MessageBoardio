@@ -7,23 +7,26 @@
     <p>To the Message Board! <a href="https://docs.microsoft.com/aspnet/core">ASP.NET Core Info Here</a>.</p>
 </div>
 
-@* @model MessageBoardModel *@
+@model MessageBoardModel 
 
-@* @using(Html.BeginForm())
+ @using(Html.BeginForm())
 {
     <table id="messageInput">
         <tbody>
 
 <!-- This here will display the Child Row for existing Rows in the Parent model -->
 
-            @foreach (var message in Model.)
+            @foreach (var message in Model.ListAll())
             {
-                @Html.Partial("MessageRow", message)
+                  <tr>
+                      @Html.Raw(message + System.Environment.NewLine)
+                      <br/>
+                 </tr>
             }
         </tbody>
 
     </table>
-    } *@
+    }
 
 
 <form

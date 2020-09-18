@@ -33,8 +33,9 @@ namespace MessageBoardio.MVC
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddRazorPages();
-
+            // services.AddRazorPages();
+            services.AddControllersWithViews();
+            
             services.AddSingleton<MessageBoardModel>();
         }
 
@@ -62,7 +63,10 @@ namespace MessageBoardio.MVC
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapRazorPages();
+                // endpoints.MapRazorPages();
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

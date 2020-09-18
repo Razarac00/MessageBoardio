@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
+using MessageBoardio.MVC.Interfaces;
 
 namespace MessageBoardio.MVC.Models
 {
-    public sealed class MessageBoardModel
+    public sealed class MessageBoardModel : IMessageBoardModel
     {
         
         // public string RequestId { get; set; }

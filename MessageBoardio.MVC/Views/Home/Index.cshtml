@@ -31,7 +31,7 @@
 
 <form
 asp-action="PostMessage"
-asp-asp-controller="Home"
+asp-controller="Home"
 method="post">
 <div>
     <tr>
@@ -42,4 +42,5 @@ method="post">
 <input type="submit" value="Submit">
 
 @Html.AntiForgeryToken()
+@* This token not necessary--just the validatetoken in the controller and the viewimports takes care of this in the form *@
 </form>

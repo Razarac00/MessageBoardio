@@ -11,13 +11,17 @@ namespace MessageBoardio.MVC.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-        private List<string> messageList = MessageBoardModel.Instance.ListAll();
         private MessageBoardModel m = MessageBoardModel.Instance;
 
-        public HomeController(ILogger<HomeController> logger)
+        public List<string> getMessagesRaw()
         {
-            _logger = logger; //replace logging with the messageboardmodel. 
+            return m.ListAll();
+        }
+
+
+        public HomeController()
+        {
+            // _logger = logger; //replace logging with the messageboardmodel. 
         }
 
         public IActionResult Index()
@@ -37,6 +41,7 @@ namespace MessageBoardio.MVC.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult PostMessage(string messageInput)
         {
             if (ModelState.IsValid)

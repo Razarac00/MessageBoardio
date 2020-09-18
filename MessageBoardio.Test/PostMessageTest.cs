@@ -3,6 +3,7 @@ using Xunit;
 using MessageBoardio.MVC.Controllers;
 using Microsoft.Extensions.Logging;
 using Moq;
+using Microsoft.AspNetCore.Mvc;
 
 namespace MessageBoardio.Test
 {
@@ -13,10 +14,14 @@ namespace MessageBoardio.Test
         public void TestPostMessageReturnType()
         {
         // arrange
-        
+        HomeController hc = new HomeController();
+        // IActionResult expected = new IActionResult();
+
         // act
+        var actual = hc.PostMessage(" ").GetType();
         
         // assert
+        // Assert.IsInstanceOfType(typeof(RedirectToRouteResult), actual);
         }
 
         [Theory]
@@ -33,14 +38,13 @@ namespace MessageBoardio.Test
         public void TestValidNonMaliciousInput(string expected)
         {
         // arrange
-        var mock = new Mock<ILogger<HomeController>>(); //forget about mocking the logger--we arent using logging anyway so remove it
-        ILogger<HomeController> logger = mock.Object;
+        HomeController hc = new HomeController();
 
-        // HomeController hc = new HomeController(mock);
         // act
-        
+        hc.PostMessage(expected);
+        var actual = hc.getMessagesRaw();
         // assert
-        // Assert.Equal(expected, );
+        Assert.True(actual.Contains(expected));
         }
     }
 }

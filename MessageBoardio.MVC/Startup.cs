@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MessageBoardio.MVC.Models;
+using MessageBoardio.MVC.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -36,7 +37,7 @@ namespace MessageBoardio.MVC
             // services.AddRazorPages();
             services.AddControllersWithViews();
 
-            // services.AddSingleton<MessageBoardModel>(); //wouldn't be messageboardmodel itself, IMessageBoard thing instead I think
+            // services.AddSingleton<IMessageBoardModel, MessageBoardModel>(); //wouldn't be messageboardmodel itself, IMessageBoard thing instead I think
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

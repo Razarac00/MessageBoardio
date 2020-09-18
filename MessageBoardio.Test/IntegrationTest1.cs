@@ -23,7 +23,7 @@ namespace MessageBoardio.Test
             string expected = "Test";
             // string address = "a";
             // string jsonToPost = JsonSerializer.Serialize(new GroceryStore { Name = name, Address = address });
-            var contentToPost = new StringContent(expected);
+            var contentToPost = new StringContent(expected); //provide this as proper form data key and value pairs
             HttpClient client = _factory.CreateClient();
 
             // act: post a store

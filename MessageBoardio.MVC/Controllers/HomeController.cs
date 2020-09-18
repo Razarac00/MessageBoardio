@@ -39,7 +39,7 @@ namespace MessageBoardio.MVC.Controllers
         [HttpPost]
         public IActionResult PostMessage(string messageInput)
         {
-            MessageBoardModel.Instance.Add(messageInput);
+            MessageBoardModel.Instance.Add(messageInput); //server side validation modelstate .isvalid check
             return RedirectToAction("Index", "Home");
         }
     }

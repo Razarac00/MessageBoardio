@@ -7,18 +7,34 @@
     <p>To the Message Board! <a href="https://docs.microsoft.com/aspnet/core">ASP.NET Core Info Here</a>.</p>
 </div>
 
-@* <form asp-action="PostMessage">
-    <input type="text" asp-for="message"/>
-    <input type="submit" value="Submit"/>
-</form> *@
+@* @model MessageBoardModel *@
+
+@* @using(Html.BeginForm())
+{
+    <table id="messageInput">
+        <tbody>
+
+<!-- This here will display the Child Row for existing Rows in the Parent model -->
+
+            @foreach (var message in Model.)
+            {
+                @Html.Partial("MessageRow", message)
+            }
+        </tbody>
+
+    </table>
+    } *@
+
 
 <form
-action
+asp-action="PostMessage"
+asp-asp-controller="Home"
 method="post">
 <div>
-    <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
-Write a comment...
-    </textarea>
+    <tr>
+            <td><label for="messageInput">Type message...</label></td>
+            <td><input type="textarea" name="messageInput" class="form-control" required></td>
+    </tr>
 </div>
 <input type="submit" value="Submit">
 </form>

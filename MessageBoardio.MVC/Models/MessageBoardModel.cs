@@ -31,12 +31,12 @@ namespace MessageBoardio.MVC.Models
             }
         }
 
-        public static void Add(string input)
+        public void Add(string input)
         {
             messages.Add(input);
         }
 
-        public static List<string> ListAll()
+        public List<string> ListAll()
         {
             return messages;
         }

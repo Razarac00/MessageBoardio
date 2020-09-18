@@ -33,7 +33,7 @@ namespace MessageBoardio.Test
         public void TestValidNonMaliciousInput(string expected)
         {
         // arrange
-        var mock = new Mock<ILogger<HomeController>>();
+        var mock = new Mock<ILogger<HomeController>>(); //forget about mocking the logger--we arent using logging anyway so remove it
         ILogger<HomeController> logger = mock.Object;
 
         // HomeController hc = new HomeController(mock);

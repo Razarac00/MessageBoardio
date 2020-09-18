@@ -16,7 +16,7 @@ namespace MessageBoardio.MVC.Models
 
         MessageBoardModel() {}
 
-        public static MessageBoardModel Instance 
+        public static MessageBoardModel Instance // doesn't need to be manually setup as singleton; useSingleton does that for us
         { 
             get 
             {

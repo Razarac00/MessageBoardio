@@ -17,7 +17,7 @@ namespace MessageBoardio.MVC.Controllers
 
         public HomeController(ILogger<HomeController> logger)
         {
-            _logger = logger;
+            _logger = logger; //replace logging with the messageboardmodel. 
         }
 
         public IActionResult Index()
